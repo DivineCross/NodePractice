@@ -1,5 +1,6 @@
 import http from 'http'
-import { compileFunction } from 'vm';
+
+const port = 5600;
 
 const indentSize = 4;
 const indentChar = ' ';
@@ -24,4 +25,4 @@ server.on('request', (req, res) => {
     res.end();
 });
 
-server.listen(5600);
+server.listen(port);
